@@ -1,0 +1,4 @@
+﻿@model woontest.Models.CartIndexViewModel
+@{
+    Html.RenderAction("CartTable", "Cart", new { carts = Model });
+}

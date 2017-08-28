@@ -1,0 +1,52 @@
+﻿@model woontest.Models.ShippingDetails
+
+@{
+    ViewBag.Title = "Оформление заказа";
+}
+
+<h2 class="textforCartTitel" style="margin-top: 20px;">Оформление заказа</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4 class="textshippinOrder">Заполните форму</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2 textshippinOrderForm" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2 textshippinOrderForm" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new { @class = "control-label col-md-2 textshippinOrderForm" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Заказать" class="btn btn-for-product" style="padding-right: 27px; padding-left: 27px;" />
+            </div>
+        </div>
+    </div>
+}
+
+
+    @*@Html.ActionLink("Назад", "Index")*@
+    <a class="btn " style="padding-right: 27px; padding-left: 27px; background-color: rgba(255, 0, 0, 0); border: 1px solid rgb(0, 0, 0); color: rgba(8, 8, 8, 0.72);" href="@Url.Action("Index","Cart")">Назад</a>
+

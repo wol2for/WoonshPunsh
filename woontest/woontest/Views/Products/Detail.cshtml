@@ -1,0 +1,169 @@
+﻿@model woontest.Models.Product
+@{
+    bool select = true;
+    int slideindex = 0;
+    int slideindexT = 0;
+    ViewBag.Title = Model.NameProduct;
+}
+
+@helper CountComments(woontest.Models.Product product)
+{
+    @product.Comments.Where(c => c.IdProduct == product.Id).Count();
+}
+
+<style>
+    .carousel {
+        margin-top: 20px;
+    }
+
+    .item .thumb {
+        width: 25%;
+        cursor: pointer;
+        float: left;
+    }
+
+        .item .thumb img {
+            width: 100%;
+            margin: 2px;
+        }
+
+    .item img {
+        width: 100%;
+    }
+
+    .hide-bullets {
+        list-style: none;
+        margin-left: -40px;
+        margin-top: 20px;
+        display: -webkit-box;
+        overflow: -webkit-paged-x;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li img {
+        border: 0px solid #fff;
+        width: 100px;
+        height: 100px;
+    }
+
+    #slider-thumbs ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    #slider-thumbs ::-webkit-scrollbar-thumb {
+        border-width: 1px 1px 1px 1px;
+        border-color: #777;
+        background-color: rgba(243, 235, 72, 0.9);
+    }
+
+        #slider-thumbs ::-webkit-scrollbar-thumb:hover {
+            border-width: 1px 1px 1px 2px;
+            border-color: #555;
+            background-color: #f4ed5c;
+        }
+
+    #slider-thumbs ::-webkit-scrollbar-track {
+        border-width: 0;
+    }
+
+        #slider-thumbs ::-webkit-scrollbar-track:hover {
+            border-left: solid 1px #aaa;
+            background-color: #eee;
+        }
+</style>
+
+<div class="space-18"></div>
+<div class="row">
+    <div class="col-sm-offset-1  col-sm-5" id="slider">
+        <!-- master slider template -->
+        <div id="carousel-bounding-box">
+            <div class="carousel slide" id="myCarousel">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    @foreach (var pic in Model.PictureProducts)
+                    {
+                        if (select)
+                        {
+                            <div class="active item" data-slide-number="@slideindex.ToString()">
+                                <img src="@Url.Action("GetImageForPicId", "Products", new { picId = pic.Id })">
+                            </div>
+                            slideindex++;
+                            select = false;
+                            continue;
+                        }
+                        <div class="item" data-slide-number="@slideindex.ToString()">
+                            <img src="@Url.Action("GetImageForPicId", "Products", new { picId = pic.Id })">
+                        </div>
+                        slideindex++;
+
+                    }
+                </div><!-- Carousel nav -->
+                <a class="left carousel-control" style="background-image: none;" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" style="background-image: none;" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        <div id="slider-thumbs">
+            <ul class="hide-bullets" style="margin-left: 0px;">
+                @foreach (var p in Model.PictureProducts)
+                {
+                    <li>
+                        <a class="thumbnail" id="carousel-selector-@slideindexT.ToString()"><img src="@Url.Action("GetImageForPicId", "Products", new { picId = p.Id })"></a>
+                    </li>
+                    slideindexT++;
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-sm-5" style="margin-top: 20px;">
+        <div class="item-description">
+            <h3 class="textforTitelProduct" style="padding-left: 0px;">@Model.NameProduct</h3>
+            <span class="textforTitelPrice">@Model.PriceProduct.ToString("#.## грн")</span>
+            <p class="textforTitelDict">
+                @Model.DescriptionProduct
+            </p>
+
+            @using (Ajax.BeginForm("AddCart", "Cart", new AjaxOptions { UpdateTargetId = "res", OnSuccess = "OnSuccess" }))
+            {
+                <div class="">
+                    @Html.Hidden("Id", Model.Id)
+                    <input type="submit" class="btn btn-for-product" value="Добавить в корзину" />
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="col-sm-10 col-sm-offset-1" style=" margin-top: 50px;">
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="tabs-nav list-inline text-center" role="tablist">
+                <li role="presentation" class="active"><a class="notDecorationForLink" href="#desc" aria-controls="desc" role="tab" data-toggle="tab" aria-expanded="true">Описание</a></li>
+                <li role="presentation" class=""><a class="notDecorationForLink" href="#review" aria-controls="review" role="tab" data-toggle="tab" aria-expanded="false">Отзывы<sup>@CountComments(Model)</sup></a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="desc">
+                    <p class="textforDict">
+                        @Model.DescriptionProduct
+                    </p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="review">
+                    @{
+                        Html.RenderAction("Review", Model.Id);
+                    }
+                </div>
+            </div>
+        </div><!--end tabs-->
+    </div>
+</div>

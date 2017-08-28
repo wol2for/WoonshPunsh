@@ -1,0 +1,57 @@
+﻿@model IEnumerable<woontest.Models.Comment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Комментарии</h2>
+
+<p>
+    @Html.ActionLink("Добавить комментарий", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Product.NameProduct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameComment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MailComment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescriptionComment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stars)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Product.NameProduct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameComment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MailComment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescriptionComment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stars)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,43 @@
+﻿@model woontest.Models.Comment
+@using woontest.Models;
+@{
+    Comment comment = new Comment();
+}
+
+@using (Ajax.BeginForm("upddateComments", new AjaxOptions { UpdateTargetId = "review" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+
+                    @Html.TextArea("DescriptionComment", htmlAttributes: new { @class = "form-control", name = "Description", style = "max-width: none; border-radius: 0;", rows = "5", placeholder = "Ваш отзыв*" })
+                    @Html.ValidationMessage("DescriptionComment", "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    @Html.Editor("NameComment", new { htmlAttributes = new { @class = "form-control", placeholder = "Имя*", style = "max-width: none; border-radius: 0;", name = "Name", value = "" } })
+                    @Html.ValidationMessage("NameComment", "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    @Html.Editor("MailComment", new { htmlAttributes = new { @class = "form-control", placeholder = "Почта*", style = "max-width: none; border-radius: 0;",  name = "eMail" } })
+                    @Html.ValidationMessage("MailComment", "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        @Html.Hidden("Stars", 5)
+        @Html.Hidden("IdProduct",Model.IdProduct)
+
+        <div class="text-right">
+            <input type="submit" class="btn btn-for-product" value="Отправить">
+        </div>
+    </div>
+}

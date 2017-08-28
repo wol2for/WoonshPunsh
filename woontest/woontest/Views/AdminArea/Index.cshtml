@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Admin Area";
+}
+<h2>Admin Area</h2>
+<div id="loading" style="display:none; color:Red; font-weight:bold;">
+    <p>Идет загрузка...</p>
+</div>
+<ul class="nav nav-tabs">
+    <li class="active">
+            @using (Ajax.BeginForm("Index", "Category", new AjaxOptions { UpdateTargetId = "table", LoadingElementId = "loading" }))
+            {
+                <input class="btn btn-primary" type="submit" value="Катигории" />
+            }
+
+    </li>
+    <li style=" margin-left: 20px; ">
+        @using (Ajax.BeginForm("Index", "Products", new AjaxOptions { UpdateTargetId = "table", LoadingElementId = "loading" }))
+        {
+            <input class="btn btn-primary" type="submit" value="Товары" />
+        }
+
+    </li>
+    <li style=" margin-left: 20px; ">
+        @using (Ajax.BeginForm("Index", "PictureProducts", new AjaxOptions { UpdateTargetId = "table", LoadingElementId = "loading" }))
+        {
+            <input class="btn btn-primary" type="submit" value="Рисунки к товарам" />
+        }
+
+    </li>
+    <li style=" margin-left: 20px; ">
+        @using (Ajax.BeginForm("Index", "Comments", new AjaxOptions { UpdateTargetId = "table", LoadingElementId = "loading" }))
+        {
+            <input class="btn btn-primary" type="submit" value="Комментарии" />
+        }
+
+    </li>
+</ul>
+<div id="table">
+
+</div>

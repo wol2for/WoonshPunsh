@@ -1,0 +1,84 @@
+﻿@model woontest.Models.CartIndexViewModel
+
+<script type="text/javascript">
+    function OnSuccess() {
+        $.get(
+            "/Cart/carts",
+            null,
+            function (data) { $("#res").html(data) }
+        );
+    }
+</script>
+
+@if (Model.Cart != null)
+{
+    if (Model.Cart.Lines.Count() != 0)
+    {
+        <div>
+            <table class="table table-responsive table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center textproduct"></th>
+                        <th class="text-center textproduct">Количество</th>
+                        <th class="text-center textproduct">Наименование</th>
+                        <th class="text-center textproduct">Цена</th>
+                        <th class="text-center textproduct">Удалить</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var line in Model.Cart.Lines)
+            {
+            <tr>
+                <td class="text-center" style=" vertical-align: baseline"><img src="@Url.Action("GetImage", "Products", new { productId = line.Product.Id })" alt="Lights" style="width:90px"></td>
+                <td class="text-center textproductforCart" style=" vertical-align: baseline">@line.Quantity</td>
+                <td class="text-center" style=" vertical-align: baseline"><a href="@Url.Action("Redict", "Products", new { id = line.Product.Id})" class="textproductforCart">@line.Product.NameProduct</a></td>
+                <td class="text-center textproductforCart" style=" vertical-align: baseline">@line.Product.PriceProduct.ToString("#.## грн")</td>
+                <td class="text-center" style=" vertical-align: baseline">
+                    
+                        @using (Ajax.BeginForm("RemoveFromCart", "Cart", new AjaxOptions { UpdateTargetId = "tabcart", OnSuccess = "OnSuccess" }))
+                            {
+                            @Html.Hidden("Id", line.Product.Id)
+                            
+                            <span class="glyphicon glyphicon-trash fileinput-button" style="font-size: large; color: #333"><input style="width: 35px; height: 35px;" type="submit" />   </span>
+                        }
+                         
+                </td>
+            </tr>
+            }
+                </tbody>
+
+            </table>
+        </div>
+    <div class="col-xs-6">
+        <div class="input-group">
+            <input type="text" class="form-control" style="width: inherit;" placeholder="Код купона" aria-describedby="basic-addon2">
+            <a href="#" class="btn input-group-addon cupon-btn " id="basic-addon2" style="width: 0%;">Отправить</a>
+        </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <ul class="list-unstyled text-right cart-subtotal-list">
+        <li class="texttotalcost">
+            Итого:
+            <span class="lead">@Model.Cart.TotalCost().ToString("#.## грн")</span>
+        </li>
+    </ul>
+    <br />
+    <hr />
+    <div class="text-center">
+    <a href="@Url.Action("ShippingDetail")" style="margin-bottom: 20px;" class="btn btn-for-product">Офромить заказ</a>
+        </div>
+    }
+}
+else
+{
+    <br />
+    <br />
+    <h4 class="text-left textforCart">В данный момент не выбрано ни одного товара.</h4>
+    <br />
+    <br />
+    <br />
+}
+
+

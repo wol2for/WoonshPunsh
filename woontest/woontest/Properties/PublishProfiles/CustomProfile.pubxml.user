@@ -1,0 +1,1148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACrBhkgTTqESbQ9j2+y3uYAAAAAACAAAAAAAQZgAAAAEAACAAAACWGAELLKE1yW1gR6py9VB+x6Qb4S3qLt3P++L11MAAoQAAAAAOgAAAAAIAACAAAAAzsx6akUqXhjORjfdwrdJQbTfkcW4ObbmdoGuEK9r0cSAAAAB0SibZwr4W++PMUVB7tzElCq38kftBxsxs7PrrUy9uCUAAAAD5h/kyuitY6MM3UyLyEiZY+vbpu2IO5foO5KedFflmC1kUg/xI40lyHh8V/BdG0Ei6wFWhTzCXW5rI4BvkhPAW</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp-eu.Smarterasp.net/WoonshPoonsh</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>07/25/2017 18:31:43</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 07:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 07:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>07/25/2017 18:31:43</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 08:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 08:32:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 15:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 10:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 10:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 14:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 10:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 10:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 14:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2016 02:10:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 12:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 12:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 12:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 12:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/13/2015 12:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/13/2015 12:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/13/2015 12:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 12:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/13/2015 12:16:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/05/2012 10:08:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/27/2012 12:00:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/ru/EntityFramework.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/ru/EntityFramework.SqlServer.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.AspNet.Identity.Core.resources.dll">
+      <publishTime>04/03/2015 17:09:50</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.AspNet.Identity.EntityFramework.resources.dll">
+      <publishTime>04/03/2015 17:09:52</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.AspNet.Identity.Owin.resources.dll">
+      <publishTime>04/03/2015 17:09:52</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Host.SystemWeb.resources.dll">
+      <publishTime>02/13/2015 13:24:52</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.resources.dll">
+      <publishTime>02/13/2015 13:24:52</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.Facebook.resources.dll">
+      <publishTime>02/13/2015 13:24:52</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.Google.resources.dll">
+      <publishTime>02/13/2015 13:24:54</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.MicrosoftAccount.resources.dll">
+      <publishTime>02/13/2015 13:24:54</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.resources.dll">
+      <publishTime>02/13/2015 13:24:54</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.Twitter.resources.dll">
+      <publishTime>02/13/2015 13:24:54</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Helpers.resources.dll">
+      <publishTime>01/28/2015 04:04:40</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Mvc.resources.dll">
+      <publishTime>01/28/2015 04:02:30</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:42</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Razor.resources.dll">
+      <publishTime>01/28/2015 04:02:40</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>01/28/2015 04:04:40</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>01/28/2015 04:04:40</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.resources.dll">
+      <publishTime>01/28/2015 04:04:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 03:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 14:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 03:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/10/2013 17:28:38</publishTime>
+    </File>
+    <File Include="bin/woontest.dll">
+      <publishTime>08/15/2017 17:54:02</publishTime>
+    </File>
+    <File Include="bin/woontest.pdb">
+      <publishTime>08/15/2017 17:54:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/29/2017 22:10:27</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Content/masters.css">
+      <publishTime>08/08/2017 02:43:10</publishTime>
+    </File>
+    <File Include="Content/masterSlider.css">
+      <publishTime>07/31/2017 16:58:12</publishTime>
+    </File>
+    <File Include="Content/Myless.less">
+      <publishTime>08/09/2017 01:46:36</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/15/2017 15:40:20</publishTime>
+    </File>
+    <File Include="Content/Slick/ajax-loader.gif">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/fonts/slick.eot">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/fonts/slick.svg">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/fonts/slick.ttf">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/fonts/slick.woff">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/slick-theme.css">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/slick-theme.scss">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/slick.css">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/Slick/slick.scss">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Content/type.less">
+      <publishTime>08/03/2017 18:54:03</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/25/2017 18:31:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/25/2017 18:31:23</publishTime>
+    </File>
+    <File Include="Image/Avtar/avtar.png">
+      <publishTime>08/12/2017 18:18:54</publishTime>
+    </File>
+    <File Include="Image/CaruselForGreatIdea/0laAkXZyP1k.jpg">
+      <publishTime>08/09/2017 16:13:18</publishTime>
+    </File>
+    <File Include="Image/CaruselForGreatIdea/BVcGQbet84s.jpg">
+      <publishTime>08/09/2017 16:13:18</publishTime>
+    </File>
+    <File Include="Image/CaruselForGreatIdea/FgOvI7DVv_0-e1494773201378.jpg">
+      <publishTime>08/09/2017 16:13:18</publishTime>
+    </File>
+    <File Include="Image/CaruselForGreatIdea/qif0Za8_vIE.jpg">
+      <publishTime>08/09/2017 16:13:18</publishTime>
+    </File>
+    <File Include="Image/CaruselForGreatIdea/vvm9ScNEMMo.jpg">
+      <publishTime>08/09/2017 16:13:18</publishTime>
+    </File>
+    <File Include="Image/HappyBox/1-min.png">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/1.png">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/2-min.png">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/2.png">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/3-min.png">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/3.png">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/A-shop-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/A-shop-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/dolce-milk-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/dolce-milk-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/DZHEKO-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/DZHEKO-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/eldorado-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/eldorado-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/gapchinskaya-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/gapchinskaya-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/iv-roshe-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/iv-roshe-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/Izdatelstvo-E-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/Izdatelstvo-E-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/KINDER-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/KINDER-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/Krajola-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/Krajola-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/LETUAL-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/LETUAL-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/MILKA-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/MILKA-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/MOYO-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/MOYO-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/NUTELLA-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/NUTELLA-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/SHV-ARTS-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/SHV-ARTS-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/UGEARS-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/UGEARS-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/WOW-SHOP-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/WOW-SHOP-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/ZIAJA-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:42</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Best/ZIAJA-382x200-382x200.png">
+      <publishTime>08/11/2017 02:24:38</publishTime>
+    </File>
+    <File Include="Image/HappyBox/dlya-devushki-min.png">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/dlya-devushki.png">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/dlya-muzhchin-min.png">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/dlya-muzhchin.png">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/dlya-podrostka-min.png">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/dlya-podrostka.png">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8087-min.jpg">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8087.jpg">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8088-min.jpg">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8088.jpg">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8089-min.jpg">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8089.jpg">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8092-min.jpg">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/DSC_8092.jpg">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/A-shop-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/A-shop-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Akvarel-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Akvarel-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/arial-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/arial-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/ememdems-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/ememdems-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/iv-roshe-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/iv-roshe-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/KINDER-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/KINDER-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Krajola-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Krajola-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/LETUAL-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/LETUAL-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/LOVE-IS-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/LOVE-IS-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/MILKA-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/MILKA-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/MOYO-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/MOYO-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/NUTELLA-382x200-382x200 %281%29-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/NUTELLA-382x200-382x200 %281%29.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/OREO-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/OREO-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/TAKTIK-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/TAKTIK-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Twin-Bock-2-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Twin-Bock-2-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/UGEARS-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/UGEARS-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/UNO-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/UNO-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Vunsh-Punsh-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/Vunsh-Punsh-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/WOW-SHOP-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:18:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/WOW-SHOP-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/ZIAJA-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:29:22</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Optimal/ZIAJA-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:24</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/222-382x200-min.jpg">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/222-382x200.jpg">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/A-shop-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/A-shop-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/Akvarel-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/Akvarel-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/ememdems-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/ememdems-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/KINDER-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/KINDER-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/LOVE-IS-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/LOVE-IS-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/MILKA-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/MILKA-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/NUTELLA-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/NUTELLA-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/OREO-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/OREO-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/Twin-Bock-2-382x200-382x200 %281%29-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/Twin-Bock-2-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/Twin-Bock-2-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/UNO-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/UNO-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/Vunsh-Punsh-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/Vunsh-Punsh-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/WOW-SHOP-382x200-382x200-min.png">
+      <publishTime>08/15/2017 14:17:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Standart/WOW-SHOP-382x200-382x200.png">
+      <publishTime>08/11/2017 02:25:04</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Unboxning/uZ5aQiHjrA8-582x600.jpg">
+      <publishTime>08/11/2017 03:07:16</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Unboxning/пример-коробки-582x600-min.jpg">
+      <publishTime>08/15/2017 14:17:40</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Unboxning/пример-коробки-582x600.jpg">
+      <publishTime>08/11/2017 03:07:16</publishTime>
+    </File>
+    <File Include="Image/HappyBox/Unboxning/просто-хеппи-коробка-min.jpg">
+      <publishTime>08/15/2017 14:17:40</publishTime>
+    </File>
+    <File Include="Image/HappyBox/uZ5aQiHjrA8-582x600-min.jpg">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/uZ5aQiHjrA8-582x600.jpg">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/пример-коробки-582x600-min.jpg">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/пример-коробки-582x600.jpg">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/HappyBox/просто-хеппи-коробка-min.jpg">
+      <publishTime>08/15/2017 14:17:27</publishTime>
+    </File>
+    <File Include="Image/HappyBox/просто-хеппи-коробка.jpg">
+      <publishTime>08/10/2017 02:48:59</publishTime>
+    </File>
+    <File Include="Image/ImageForCarusel/баннер-вунш-пунш.jpg">
+      <publishTime>07/25/2017 19:40:56</publishTime>
+    </File>
+    <File Include="Image/ImageForCarusel/баннер-вунш-пунш.хеппи-бокс.jpg">
+      <publishTime>07/25/2017 19:40:56</publishTime>
+    </File>
+    <File Include="Image/ImageForCarusel/баннер-вунш-пунш1.jpg">
+      <publishTime>07/25/2017 19:40:56</publishTime>
+    </File>
+    <File Include="Image/MainLogo/favicon.ico">
+      <publishTime>08/14/2017 18:58:59</publishTime>
+    </File>
+    <File Include="Image/MainLogo/Logo.png">
+      <publishTime>08/11/2017 18:20:31</publishTime>
+    </File>
+    <File Include="Image/MainLogo/MainLogo.png">
+      <publishTime>08/11/2017 18:05:52</publishTime>
+    </File>
+    <File Include="Image/MainLogo/mini-logo-32x32.png">
+      <publishTime>08/14/2017 18:39:45</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/8t59ksX7_QI.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/C3XBaZ0JHEs.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/D-YKp1SNfQU.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/dQ5A-CopXFc.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/fobwGiUXkQ.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/OK89u4R3n6g.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/QS9NPwXucRE.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/review1.jpg">
+      <publishTime>08/09/2017 15:41:58</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/review2.jpg">
+      <publishTime>08/09/2017 15:41:58</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/uc11LtiANuA.jpg">
+      <publishTime>08/09/2017 15:38:07</publishTime>
+    </File>
+    <File Include="Image/RewiewImage/Zj0eKZYqQKs.jpg">
+      <publishTime>08/09/2017 15:41:58</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/1111.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/111уцак1.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/1223d-1.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/222-1.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/3451.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/455341.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/45631.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SecondImageForGreatIdea/dhjjhf-1.jpg">
+      <publishTime>08/09/2017 18:32:14</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/facebook-logo-button %281%29.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/facebook-logo-button.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/facebook.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/instagram-logo %281%29.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/instagram-logo.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/instagram.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/vk %282%29.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/vk %283%29.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialIcons/vk %284%29.png">
+      <publishTime>08/09/2017 12:29:07</publishTime>
+    </File>
+    <File Include="Image/SocialImageFooter/facebook-icon.png">
+      <publishTime>08/12/2017 18:27:33</publishTime>
+    </File>
+    <File Include="Image/SocialImageFooter/picasa-icon.png">
+      <publishTime>08/12/2017 18:27:33</publishTime>
+    </File>
+    <File Include="Image/SocialImageFooter/vimeo-icon.png">
+      <publishTime>08/12/2017 18:27:33</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/25/2017 18:32:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>08/02/2017 03:36:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>08/02/2017 03:36:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>08/02/2017 03:36:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>08/02/2017 03:36:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>08/02/2017 03:36:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>08/02/2017 03:36:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>07/28/2017 15:56:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>07/28/2017 15:56:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/02/2017 03:08:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/02/2017 03:08:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>07/25/2017 18:31:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/25/2017 18:31:38</publishTime>
+    </File>
+    <File Include="Scripts/master.js">
+      <publishTime>07/31/2017 17:55:10</publishTime>
+    </File>
+    <File Include="Scripts/masterslider.js">
+      <publishTime>08/07/2017 21:16:13</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>07/25/2017 18:31:37</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>07/25/2017 18:31:37</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>07/25/2017 18:31:37</publishTime>
+    </File>
+    <File Include="Scripts/Slick/slick.js">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Scripts/Slick/slick.min.js">
+      <publishTime>08/10/2017 23:29:11</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmEmail.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>08/15/2017 17:40:06</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>08/15/2017 17:45:42</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/SendCode.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/VerifyCode.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/AdminArea/Index.cshtml">
+      <publishTime>08/14/2017 14:39:56</publishTime>
+    </File>
+    <File Include="Views/Cart/AddCart.cshtml">
+      <publishTime>08/01/2017 02:47:37</publishTime>
+    </File>
+    <File Include="Views/Cart/carts.cshtml">
+      <publishTime>08/11/2017 21:12:04</publishTime>
+    </File>
+    <File Include="Views/Cart/CartTable.cshtml">
+      <publishTime>08/12/2017 14:27:14</publishTime>
+    </File>
+    <File Include="Views/Cart/Index.cshtml">
+      <publishTime>08/14/2017 14:47:35</publishTime>
+    </File>
+    <File Include="Views/Cart/RemoveFromCart.cshtml">
+      <publishTime>08/01/2017 14:43:50</publishTime>
+    </File>
+    <File Include="Views/Cart/Sent.cshtml">
+      <publishTime>08/14/2017 14:41:17</publishTime>
+    </File>
+    <File Include="Views/Cart/ShippingDetail.cshtml">
+      <publishTime>08/14/2017 14:41:39</publishTime>
+    </File>
+    <File Include="Views/Cart/upddateComments.cshtml">
+      <publishTime>08/04/2017 17:45:49</publishTime>
+    </File>
+    <File Include="Views/Category/Create.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/Category/Delete.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/Category/Edit.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/Category/Index.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/Comments/Create.cshtml">
+      <publishTime>08/04/2017 16:12:11</publishTime>
+    </File>
+    <File Include="Views/Comments/Delete.cshtml">
+      <publishTime>08/04/2017 16:12:11</publishTime>
+    </File>
+    <File Include="Views/Comments/Details.cshtml">
+      <publishTime>08/04/2017 16:12:12</publishTime>
+    </File>
+    <File Include="Views/Comments/Edit.cshtml">
+      <publishTime>08/04/2017 16:12:12</publishTime>
+    </File>
+    <File Include="Views/Comments/Index.cshtml">
+      <publishTime>08/12/2017 15:23:14</publishTime>
+    </File>
+    <File Include="Views/Error/Forbidden.cshtml">
+      <publishTime>08/14/2017 19:28:54</publishTime>
+    </File>
+    <File Include="Views/Error/NotFound.cshtml">
+      <publishTime>08/14/2017 19:28:54</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>08/14/2017 14:48:13</publishTime>
+    </File>
+    <File Include="Views/Home/Delivery.cshtml">
+      <publishTime>08/14/2017 14:48:32</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>08/14/2017 14:48:32</publishTime>
+    </File>
+    <File Include="Views/Home/Reviews.cshtml">
+      <publishTime>08/14/2017 14:48:42</publishTime>
+    </File>
+    <File Include="Views/Manage/AddPhoneNumber.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Manage/ChangePassword.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Manage/Index.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Manage/ManageLogins.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Manage/SetPassword.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/PictureProducts/Create.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/PictureProducts/Delete.cshtml">
+      <publishTime>07/25/2017 20:07:51</publishTime>
+    </File>
+    <File Include="Views/PictureProducts/Details.cshtml">
+      <publishTime>07/25/2017 20:07:52</publishTime>
+    </File>
+    <File Include="Views/PictureProducts/Edit.cshtml">
+      <publishTime>07/26/2017 14:57:54</publishTime>
+    </File>
+    <File Include="Views/PictureProducts/Index.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/Products/AddProductToAllList.cshtml">
+      <publishTime>08/05/2017 22:40:51</publishTime>
+    </File>
+    <File Include="Views/Products/All.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Products/Create.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/Products/createCommentForProduct.cshtml">
+      <publishTime>08/12/2017 19:04:24</publishTime>
+    </File>
+    <File Include="Views/Products/Delete.cshtml">
+      <publishTime>07/25/2017 19:35:36</publishTime>
+    </File>
+    <File Include="Views/Products/Detail.cshtml">
+      <publishTime>08/15/2017 15:16:23</publishTime>
+    </File>
+    <File Include="Views/Products/Details.cshtml">
+      <publishTime>07/25/2017 19:35:36</publishTime>
+    </File>
+    <File Include="Views/Products/Edit.cshtml">
+      <publishTime>08/15/2017 17:51:44</publishTime>
+    </File>
+    <File Include="Views/Products/GreatIdea.cshtml">
+      <publishTime>08/14/2017 14:51:28</publishTime>
+    </File>
+    <File Include="Views/Products/HappyBox.cshtml">
+      <publishTime>08/15/2017 14:30:52</publishTime>
+    </File>
+    <File Include="Views/Products/Index.cshtml">
+      <publishTime>08/12/2017 15:22:49</publishTime>
+    </File>
+    <File Include="Views/Products/List.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Products/Review.cshtml">
+      <publishTime>08/12/2017 18:19:23</publishTime>
+    </File>
+    <File Include="Views/Products/upddateComments.cshtml">
+      <publishTime>08/05/2017 19:10:14</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/14/2017 19:28:54</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/14/2017 19:41:29</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>07/25/2017 18:31:39</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/25/2017 18:31:23</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/25/2017 18:31:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/15/2017 17:54:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<woontest.Models.Comment>
+@using woontest.Models;
+@{ 
+    var commentsAll = new Comment();
+}
+<ul class="comments-list list-unstyled margin-b-50">
+    @if (Model.Count()!= 0)
+    {
+        foreach (var item in Model)
+        {
+            <li class="clearfix">
+                <img src="~/Image/Avtar/avtar.png" class="img-circle pull-left" style="margin-right: 10px; height:60px; width:60px">
+                <div class="overflow-hidden">
+                    <span class="pull-right rating">
+                        @for (int i = 1; i < 6; i++)
+                        {
+                            if (item.Stars >= i)
+                            {
+                            <i class="glyphicon glyphicon-star"></i>
+                            }
+                            else
+                            {
+                            <i class="glyphicon glyphicon-star-empty"></i>
+                            }
+                        }
+                    </span>
+                    <h5 style="color: rgb(37, 39, 39); font-family: 'Roboto Condensed', sans-serif; font-size: 17px;">@item.NameComment</h5>
+                    <p style="line-height: 26px; color: rgba(48, 52, 53, 0.75); font-family: 'Roboto Condensed', sans-serif;">
+                       @item.DescriptionComment
+                    </p>
+                </div>
+            </li>
+        }
+
+    }
+</ul>
+<h4 class="textForComments margin-b-30">Добавить отзыв</h4>
+<h5 class="textForComments margin-b-30">Ваш e-mail не будет опубликован. Обязательные поля помечены *</h5>
+@{
+    Html.RenderPartial("createCommentForProduct", new Comment { IdProduct = Model.Select(r=> r.IdProduct).FirstOrDefault() });
+}
+

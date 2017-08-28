@@ -1,0 +1,52 @@
+﻿@model IEnumerable<woontest.Models.Category>
+@using woontest.Models
+@{
+    ViewBag.Title = "Главная";
+}
+
+<div id="carousel-main" class="carousel slide" data-ride="carousel" style="margin-bottom:25px; margin-top:25px">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-main" data-slide-to="1"></li>
+        <li data-target="#carousel-main" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner ">
+        <div class="item active">
+
+            <a href="@Url.Action("GreatIdea", "Products")"><img src="~/Image/ImageForCarusel/баннер-вунш-пунш.jpg" /></a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("HappyBox", "Products")"><img src="~/Image/ImageForCarusel/баннер-вунш-пунш.хеппи-бокс.jpg" /></a>
+        </div>
+        <div class="item">
+            <img src="~/Image/ImageForCarusel/баннер-вунш-пунш1.jpg" />
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a style=" background-image: none; " class="left carousel-control" href="#carousel-main" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a style=" background-image: none; "  class="right carousel-control" href="#carousel-main" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+
+<div class="row">
+    @foreach (Category item in Model)
+    {
+        <div class="col-sm-4">
+            <div class="thumbnail" style="padding-left:0px; padding-right:0px; border:none">
+                <a href="@Url.Action("Redict", "Home", new { id = item.Id })" class="image-box">
+                    <img src="data:image/gif;base64, @Convert.ToBase64String(item.PictureCategory) " alt="Responsive image" class="td" style="width: 100%">
+                    <div class="img-optical"></div>
+                </a>
+            </div>
+        </div>
+    }
+</div>
+

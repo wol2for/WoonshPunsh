@@ -1,0 +1,14 @@
+﻿@model woontest.Models.CartIndexViewModel
+@{
+    ViewBag.Title = "Корзина";
+}
+
+<h2 style="margin-top: 35px;" class="textforCartTitel">Корзина заказов</h2>
+
+
+<div id="tabcart">
+    @Html.Action("CartTable", new { carts = Model })
+</div>
+<div class="text-center">
+    <a class="btn btn-for-product" href="@Url.Action("Index","Home")">Продолжить покупку</a>
+</div>

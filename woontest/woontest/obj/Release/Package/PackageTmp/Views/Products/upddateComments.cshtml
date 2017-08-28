@@ -1,0 +1,12 @@
+﻿@model int?
+@{  
+    if (Model.HasValue)
+    {
+        Html.RenderAction("Review", Model.Value);
+    }
+    else
+    {
+        throw new Exception("Ошибка в UpddateComments");
+    }
+}
+

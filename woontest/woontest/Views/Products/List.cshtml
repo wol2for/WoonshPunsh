@@ -1,0 +1,25 @@
+﻿@model IEnumerable<woontest.Models.Product>
+@using woontest.Models;
+@{
+    ViewBag.Title = "Все продукты";
+}
+<div class="space-17"></div>
+<h1 class= "textTitel">@Model.FirstOrDefault().Category.NameCategory</h1>
+
+<div class="row">
+    @foreach (Product item in Model)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail" style="padding:initial">
+                <a href="@Url.Action("Redict", "Products", new { id = item.Id })" class="notDecorationForLink">
+                    <div class="image-box">
+                        <img src="@Url.Action("GetImage", "Products", new { productId = item.Id })" class="img-responsive" alt="Lights" style="width:100%">
+                    </div>
+                    <div class="caption textproduct">
+                        <p  >@Html.DisplayFor(modelItem => item.NameProduct)</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    }
+</div>
